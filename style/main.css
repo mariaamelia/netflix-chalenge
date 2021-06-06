@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Arial Black";
+    src: url('../font/arial-black.ttf');
+    font-weight: bold;
+}
+
+:root{
+    --red: #E50914;
+    --black: #141414;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* We are saying that all the elements will not exceed the main box*/
+}
+
+body{
+    background: var(--black);
+    font-family: Arial,Times,serif;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color:var(--red);
+    font-family: "Arial Black",Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff
+}
+
+/* It's related with the main movie */
+.main-movie{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100% ), url("../img/cover-home.jpg");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description{
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.title{
+    margin-top: 30%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+.button-watching-now,.button-information{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+
+}
+
+
+.icon{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.main-movie .container{
+    width: 90%;
+}
+
+.box-movie{
+    width: 10%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 5px;
+}
